@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fpm-deployment
+  labels:
+    app: fpm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fpm
+  template:
+    metadata:
+      labels:
+        app: fpm
+    spec:
+      containers:
+      - name: fpm
+        image: hursittopal/test-fpm:1.0.1
+        imagePullPolicy: Always
