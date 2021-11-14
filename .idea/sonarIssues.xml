@@ -3,7 +3,17 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../enuygun/project/docker/docker-compose.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/.gitignore">
           <value>
             <set />
           </value>
@@ -14,6 +24,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/.env">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/.gitignore">
           <value>
             <set />
           </value>
@@ -63,12 +78,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/k8s/Makefile">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/k8s/deploy.sh">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/k8s/fpm/ConfigMap.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/k8s/fpm/Secret.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/k8s/fpm/deployment.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/k8s/fpm/persistentVolumeClaim.yaml">
           <value>
             <set />
           </value>
