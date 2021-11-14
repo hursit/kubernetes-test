@@ -53,3 +53,5 @@ RUN chmod +x /bin/wkhtmltopdf
 COPY ./app /application
 RUN chown -R www-data:www-data /application
 RUN chmod 755 /application
+RUN rm -rf /application/vendor
+RUN APP_ENV=prod composer install --ansi --no-interaction --no-dev

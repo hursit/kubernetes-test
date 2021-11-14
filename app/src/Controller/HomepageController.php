@@ -24,7 +24,8 @@ class HomepageController extends AbstractController
 
         return $this->render('homepage/index.html.twig', [
             'controller_name' => 'HomepageController',
-            'count' => $entity->getCount()
+            'count' => $entity->getCount(),
+            'hostname' => gethostname()
         ]);
     }
 }
