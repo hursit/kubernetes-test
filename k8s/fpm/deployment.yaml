@@ -15,6 +15,28 @@ spec:
         app: fpm
     spec:
       containers:
-      - name: fpm
-        image: hursittopal/test-fpm:1.0.1
-        imagePullPolicy: Always
+        - name: fpm
+          image: hursittopal/test-fpm:1.0.2
+          imagePullPolicy: Always
+
+          volumeMounts:
+            - name: app-env-config-volume
+              mountPath: /application/.env
+              subPath: app-parameters
+
+            - name: ssh-secret-volume
+              mountPath: /root/.ssh/id_rsa
+              subPath: ssh-privatekey
+
+            - name: ssh-secret-volume
+              mountPath: /root/.ssh/id_rsa.pub
+              subPath: ssh-publickey
+
+      volumes:
+        - name: app-env-config-volume
+          configMap:
+            name: app-env-config
+        - name: ssh-secret-volume
+          secret:
+            secretName: ssh-secret
+            defaultMode: 0600
