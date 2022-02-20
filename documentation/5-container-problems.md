@@ -1,0 +1,3 @@
+- Koordinasyon
+- Uygulama versiyon yükseltmesi (Down olmadan)
+- Monitoring

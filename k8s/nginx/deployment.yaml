@@ -18,10 +18,18 @@ spec:
         - name: nginx
           image: hursittopal/test-nginx:1.0.1
           imagePullPolicy: IfNotPresent
+          resources:
+            limits:
+              cpu: 500m
+            requests:
+              cpu: 200m
           volumeMounts:
             - name: nginx-config-volume
               mountPath: /etc/nginx/conf.d/default.conf
               subPath: default.conf
+            - name: nginx-config-volume
+              mountPath: /etc/nginx/nginx.conf
+              subPath: nginx.conf
       volumes:
         - name: nginx-config-volume
           configMap:

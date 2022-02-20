@@ -1,0 +1,1 @@
+**Dockerfile :** Belirli bir image oluşturmak için gerekli bütün ayarlamaların olduğu dosyadır. Dockerfile içerisinde hangi Image’ın kullanılacağı, hangi dosyaları içereceği ve hangi uygulamanın hangi parametrelerle çalışacağı yazılır. 
