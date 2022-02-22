@@ -1,5 +1,5 @@
 #!/bin/bash
-FPM_DEPLOY_VERSION="1.0.7"
+FPM_DEPLOY_VERSION="1.0.8"
 HOST="test.box"
 KEY_FILE="nginx/ssl/keyfile"
 CERT_FILE="nginx/ssl/certfile"
@@ -8,8 +8,7 @@ CERT_NAME="ssl-cert"
 deploy:
 	docker tag docker_test-fpm hursittopal/test-fpm:${FPM_DEPLOY_VERSION}
 	docker push hursittopal/test-fpm:${FPM_DEPLOY_VERSION}
-	kubectl apply -f fpm/deployment.yaml
-
+	
 deploy-all:
 	docker tag docker_test-fpm hursittopal/test-fpm:${FPM_DEPLOY_VERSION}
 	docker push hursittopal/test-fpm:${FPM_DEPLOY_VERSION}

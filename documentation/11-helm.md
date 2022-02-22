@@ -5,7 +5,7 @@ https://hub.kubeapps.com/
 helm show all bitnami/mysql
 
 helm search hub wordpress => https://artifacthub.io/
-helm search hub wordpress => öncesinde yüklenen dosyalarda arama yapar
+helm search repo wordpress => öncesinde yüklenen dosyalarda arama yapar
 
 helm install bitnami/wordpress --generate-name
 helm list

@@ -6,4 +6,4 @@ data:
   app-parameters: |
     APP_ENV=prod
     APP_SECRET=e7b5b1b27202810539aae7b22634e52b
-    DATABASE_URL="mysql://root:root@mysql-service:3306/test-db?serverVersion=5.7"
+    DATABASE_URL="mysql://root:erkan74@10.56.208.5:3306/test-db?serverVersion=5.7"
