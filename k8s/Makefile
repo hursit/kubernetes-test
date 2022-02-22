@@ -29,11 +29,11 @@ deploy-all:
 	docker push hursittopal/test-rabbitmq:1.0.1
 
 locust-up:
-	kubectl apply -f locust/master-deployment.yaml
-	kubectl apply -f locust/nodeport.yaml
-	kubectl apply -f locust/scripts-cm.yaml
-	kubectl apply -f locust/service.yaml
-	kubectl apply -f locust/slave-deployment.yaml
+	kubectl apply -f locust_cluster/master-deployment.yaml
+	kubectl apply -f locust_cluster/nodeport.yaml
+	kubectl apply -f locust_cluster/scripts-cm.yaml
+	kubectl apply -f locust_cluster/service.yaml
+	kubectl apply -f locust_cluster/slave-deployment.yaml
 
 up:
 	kubectl apply -f memcached/deployment.yaml
